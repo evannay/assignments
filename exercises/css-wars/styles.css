@@ -2,7 +2,8 @@ body {
     background: #111111
 }
 h1 {
-    color: #E2E80F
+    color: #E2E80F;
+    text-align: center;
 }
 p {
     color: #eeeeee;

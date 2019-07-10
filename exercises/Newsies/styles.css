@@ -1,0 +1,25 @@
+.blue {
+    color: blue
+}
+h1 {
+    font-size: 150px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Barriecito', cursive;
+}
+h3 {
+    font-size: 75px;
+    text-align: center;
+    background: orange;
+}
+.orange {
+    color: orange;
+}
+.underline {
+    text-decoration: underline;
+}
+p{
+    display: inline-block;
+    width: 30%;
+    margin: 0px 15px;
+}
