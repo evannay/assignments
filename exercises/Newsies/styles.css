@@ -22,4 +22,5 @@ p{
     display: inline-block;
     width: 30%;
     margin: 0px 15px;
+    vertical-align: top;
 }
