@@ -1,0 +1,33 @@
+h1 {
+    color: darkgreen;
+    font-family: Georgia;
+    text-align: center;
+}
+
+h5 {
+    color: darkgreen;
+    font-family: Georgia;
+    text-align: center;
+}
+img {
+    height: 300px;
+    float: left;
+    margin: 20px;
+}
+
+p {
+    margin: 15px;
+    font-size: large;
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none
+}
+
+div{
+    text-transform: uppercase;
+}
+a:hover{
+    text-decoration: underline;
+}
