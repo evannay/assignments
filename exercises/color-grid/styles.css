@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+.pink {
+    background-color: #F5C6D6;
+    height: 125px;
+    width: 100%;
+    border: 15px solid white;
+}
+.darkpink {
+    background-color: #EE2E84;
+    display: inline-block;
+    height: 125px;
+    width: 25%;
+    border: 15px solid white;
+}
+.blue {
+    background-color: #85CFD8;
+    display: inline-block;
+    height: 125px;
+    width: 50%;
+    border: 15px solid white;
+
+}
+.green {
+    background-color: #8DC63F;
+    height: 125px;
+    width: 75%;
+    border: 15px solid white;
+    display: inline-block;
+}
+
+.purple {
+    background-color:#E76E34;
+    height: 125px;
+    width: 25%;
+    border: 15px solid white;
+    display: inline-block;
+}
