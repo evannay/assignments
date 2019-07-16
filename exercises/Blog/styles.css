@@ -1,0 +1,43 @@
+/* * {
+    box-sizing: border-box;
+    font-size: 0pt;
+    margin: 0;
+} */
+body{
+    background-image:radial-gradient(lightblue, black);
+}
+h1{
+    font-family: fantasy;
+    font-size: 64pt;
+    text-align: center;
+}
+.navbar{
+    border: 1px solid red;
+    height: 50px;
+    width: 98%;
+    position: fixed;
+    background-color:red;
+}
+#searchbar{
+    border: 1px solid black;
+    margin-left: 90%;
+    margin-top: 31px;
+}
+.center{
+    text-align: center;
+}
+.blogPost{
+    margin: 0% 30% 0% 30%;
+}
+footer{
+    text-align: center;
+    font-size: small;
+}
+.photo{
+    max-width:300px;
+    float: left;
+    margin-left: 20%;
+}
+p{
+    line-height:1.4em;
+}
