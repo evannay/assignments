@@ -60,14 +60,14 @@
 // console.log(capAndLower("Jumanji"))
 
 
-// function firstLettersCap(str) {
-//     let splitStr = str.split(' ')
-//     let result = ''
-//     for(i = 0; i < splitStr.length; i++) {
-//          result += splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1) + ' '
-//     } return result
-// }
-// console.log(firstLettersCap("Jumanji is the best movie ever!"))
+function firstLettersCap(str) {
+    let splitStr = str.split(' ')
+    let result = ''
+    for(i = 0; i < splitStr.length; i++) {
+         result += splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1) + ' '
+    } return result
+}
+console.log(firstLettersCap("Jumanji is the best movie ever!"))
 
 // function capAndLow(str) {
 //     let up = str.toUpperCase()

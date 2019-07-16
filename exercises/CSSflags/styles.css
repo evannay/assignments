@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-size: 0pt;
+    margin: 0;
+}
+.center {
+    margin: 10px 550px 10px 550px;
+    border: 1px solid;
+    height: 140px;
+    width: 300px;
+}
+.fBlue{
+    height: 100%;
+    width: 33%;
+    background-color: blue;
+    display:inline-block;
+}
+.fWhite{
+    height: 100%;
+    width: 33%;
+    background-color:white;
+    display:inline-block;
+}
+.fRed{
+    height: 100%;
+    width: 34%;
+    background-color: red;
+    display:inline-block
+}
+.gBlack{
+    height: 34%;
+    width: 100%;
+    background-color: black;
+}
+.gRed{
+    height: 33%;
+    width: 100%;
+    background-color: red;
+}
+.gYellow{
+    height: 33%;
+    width: 100%;
+    background-color: yellow;
+}
+.mWhite{
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    display: inline-block
+}
+.mRed{
+    height: 50%;
+    width: 70%;
+    background-color: red;
+    margin-left: 30%;
+    position: relative;
+    bottom: 138px;
+}
+.mGreen {
+    background-color: green;
+    height: 50%;
+    margin-left: 30%;
+    position: relative;
+    bottom: 100%;
+}
+.swissCenter {
+    margin: 10px 600px 10px 635px;
+    border: 1px solid;
+    height: 140px;
+    width: 140px;
+}
+.sRed{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+.sWhite1 {
+    background-color: white;
+    width: 60%;
+    height: 20%;
+    position: relative;
+    margin: -59% 20% 0% 20%;
+}
+.sWhite2{
+    background-color: white;
+    height: 60%;
+    width: 20%;
+    position: relative;
+    margin: -40% 0% 0% 40%;
+}
+.sBlue{
+    background-color: #006aa7;
+    height:100%;
+    width: 100%;
+}
+.sYellow1{
+    background-color: yellow;
+    width: 100%;
+    height: 10%;
+    margin: -25% 0% 0% 0%;
+    position: relative;
+}
+.sYellow2{
+    background-color: yellow;
+    width: 5%;
+    height: 100%;
+    margin: -26% 25% 0% 25%;
+    position: relative;
+}
+.gRed{
+    height:33%;
+    width: 100%;
+    background-color:maroon
+}
+.gBlue{
+    height: 33%;
+    width: 100%;
+    background-color: blue;
+    border: 5px solid white;
+}
+.gGreen{
+    background-color: darkgreen;
+    height: 34%;
+    width: 100%;
+}
+.tRed{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+.tWhite{
+    height: 50%;
+    width: 40%;
+    background-color: white;
+    margin: -46% 0% 0% 0%;
+    position:relative;
+}
+.tRed1{
+    background-color: RED;
+    width: 66%;
+    height: 20%;
+    margin: 23% 1% 0% 18%;
+    position: absolute;
+}
+.tRed2{
+    position: absolute;
+    background-color: red;
+    height: 60%;
+    width: 5%;
+    margin: 10% 0% 0% 50%;
+}
