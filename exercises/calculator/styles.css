@@ -1,0 +1,15 @@
+.answer{
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+
+
+}
+.mHeader{
+    color: darkmagenta;
+}
+.header{
+    font-size: 40pt;
+    color: darkslategrey
+}
