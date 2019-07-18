@@ -29,3 +29,11 @@ sButton.addEventListener('click', function(e){
     let total = firstValue - secondValue
     sAnswer.innerHTML = total 
 })
+let lButton = document.getElementById('add')
+lButton.addEventListener('click', function(e){
+    e.preventDefault()
+    let chore = document.getElementById('chore').value
+    listBox.innerHTML = chore
+    console.log(chore)
+    // document.list-box.innerHTML = chore
+})

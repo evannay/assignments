@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class='center'>Travel . . . If you're into it.</h1>
+    
+    <div class='box'>
+        <form name='travel'>
+        <input type='text' name='firstName' id='firstName'>First Name
+        <br>
+        <input type='text' name='lastName' id='lastName'>Last Name
+        <br>
+        <input type='number' name='age' id='age'>Age
+        <br>
+        <input value='Male' type='radio' name='gender'>Male
+        <input value='Female' type='radio' name='gender'>Female
+        <br>
+        <input value='Eugene' type="radio" name='location'>Eugene, OR
+        <input value='Portland' type="radio" name='location'>Portland, OR
+        <input value='Medford' type="radio" name='location'>Medford, OR
+        <br>
+        <h3>Dietary Restrictions (check all that apply)</h3>
+        <input value='Dairy' type="checkbox" name='restrict'>Dairy
+        <input value='Nuts'type="checkbox" name='restrict'>Nuts
+        <input value='Animal Products' type="checkbox" name='restrict'>Animal Products
+        <br>
+        <button id='submit'>Submit</button>
+    </form>
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
