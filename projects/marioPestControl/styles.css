@@ -7,11 +7,12 @@ h1{
     font-size: 55pt;
 
 }
-img{
+.imgGoomb{
     width: 250px;
     height: 250px;
-    float: left;
-    margin-left: 500px;
+    position: relative;
+    left: 300px;
+    top: 150px;
 }
 span{
     text-decoration: underline;
@@ -36,3 +37,44 @@ footer{
     font-size: 8pt;
     margin: auto;
 }
+.mainG{
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    right: 257px;
+    height: 300px;
+    width: 300px;
+}
+.mainB{
+    border: 1px solid black;
+    border: 1px solid black;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    right: 3px;
+}
+.imgBomb{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    bottom: 823px;
+    left: 300px;
+}
+.mainC{
+    border:1px solid black;
+    height:300px;
+    width: 300px;
+    display: inline-block;
+    position: relative;
+    bottom: 19px;
+    left: -3px;
+}
+.imgCheep{
+    border-radius: 70%;
+    height: 250px;
+    position: relative;
+    bottom: 521px;
+    left: 49px;
+}
+
+
