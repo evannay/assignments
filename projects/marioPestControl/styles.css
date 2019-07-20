@@ -5,14 +5,9 @@
 h1{
     font-family: fantasy;
     font-size: 55pt;
-
 }
-.imgGoomb{
-    width: 250px;
-    height: 250px;
-    position: relative;
-    left: 300px;
-    top: 150px;
+h2{
+    text-align: center;
 }
 span{
     text-decoration: underline;
@@ -25,7 +20,7 @@ button{
     height: 100px;
     width: 100px;
     border: 1px solid;
-    margin-left: 750px;
+    margin-left: 421px;
     font-family: sans-serif;
     text-align: center;
     font-size: 36pt
@@ -39,42 +34,43 @@ footer{
 }
 .mainG{
     border: 1px solid black;
-    display: inline-block;
+    /* display: inline-block;
     position: relative;
     right: 257px;
     height: 300px;
-    width: 300px;
+    width: 300px; */
 }
 .mainB{
-    border: 1px solid black;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    /* border: 1px solid black;
     position: relative;
     height: 300px;
-    width: 300px;
-    right: 3px;
+    width: 300px; */
+    /* right: 3px; */
 }
-.imgBomb{
-    width: 250px;
-    height: 250px;
-    position: relative;
-    bottom: 823px;
-    left: 300px;
-}
+
 .mainC{
-    border:1px solid black;
-    height:300px;
+    /* border:1px solid black; */
+    /* height:300px;
     width: 300px;
     display: inline-block;
     position: relative;
     bottom: 19px;
-    left: -3px;
-}
-.imgCheep{
-    border-radius: 70%;
-    height: 250px;
-    position: relative;
-    bottom: 521px;
-    left: 49px;
+    left: -3px; */
 }
 
+.pestContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 170px 50px;
+    grid-gap: 25px;
+}
 
+.pest {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+}
