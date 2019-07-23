@@ -1,22 +1,41 @@
-let box = document.getElementById('box')
+// let box = document.getElementById('box')
+// box.addEventListener('mouseover', function(e){
+//     console.log('working')
+//     box.style.background = 'blue'
+// })
+// box.addEventListener('mousedown', function(e){
+//     box.style.background ='red'
+//     console.log('yeet')
+// })
+// box.addEventListener('mouseup', function(e){
+//     box.style.background = 'yellow'
+//     console.log('up')
+// })
+// box.addEventListener('dblclick', function(e){
+//     box.style.background = 'green'
+// })
+// window.addEventListener('scroll', function(e){
+//     box.style.background = 'orange'
+// })
+// window.addEventListener('keypress', function(e){
+//     box.style.background
+// })
+let box = document.getElementById("box")
 box.addEventListener('mouseover', function(e){
-    console.log('working')
-    box.style.background = 'blue'
+    console.log("working")
 })
 box.addEventListener('mousedown', function(e){
-    box.style.background ='red'
-    console.log('yeet')
+    console.log("yeet")
 })
 box.addEventListener('mouseup', function(e){
-    box.style.background = 'yellow'
-    console.log('up')
+    console.log("yeetup")
 })
-box.addEventListener('dblclick', function(e){
-    box.style.background = 'green'
+box.addEventListener('dblclick', function (e){
+    console.log("dblyeet")
 })
 window.addEventListener('scroll', function(e){
-    box.style.background = 'orange'
+    this.console.log("scrollin'")
 })
-box.addEventListener('keypress', function(e){
-    box.style.background
+window.addEventListener('keypress', function(e){
+    this.console.log("press")
 })

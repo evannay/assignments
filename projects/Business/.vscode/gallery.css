@@ -1,0 +1,87 @@
+.headTitle{
+    text-align: center;
+    font-size: 12pt;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    width: 97%;
+}
+.homePic1{
+    width: 95%;
+    height: 100px;
+}
+.homePic2{
+    width: 95%;
+    height: 100px;
+}
+.homePic3{
+    width: 95%;
+    height: 100px;
+}
+.homePic4{
+    width: 95%;
+    height: 100px;
+}
+.tagline{
+    text-align: center;
+}
+.navContainer > a{
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: lightcoral;
+}
+.navContainer{
+    display: flex;
+    justify-content: center
+}
+.textCenter{
+    text-align: center;
+    display: none;
+}
+h1{
+    color: lightsalmon;
+}
+
+@media(min-width: 942px){
+    .homePic1{
+     width: 33%;
+     height: 200px;
+     display: inline-block;
+    }
+    .homePic2{
+        width: 33%;
+        height: 200px;
+        display: inline-block;
+    }
+    .homePic3{
+        width: 33%;
+        height: 200px;
+        display: inline-block;
+    }
+    .homePic4{
+        width: 33%;
+        height: 200px;
+        display: inline-block;
+    }
+    .headTitle{
+        font-size: 55pt;
+    }
+    .tagline{
+        display: inline-block;
+        font-size: 33pt;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        bottom: 80px;
+        position: relative;
+    }
+    .navContainer{
+        justify-content: space-evenly;
+    }
+    .textCenter{
+        display: contents
+    }
+    
+}
