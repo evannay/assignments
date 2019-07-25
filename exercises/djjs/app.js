@@ -22,19 +22,19 @@
 // })
 let box = document.getElementById("box")
 box.addEventListener('mouseover', function(e){
-    console.log("working")
+    box.style.background = 'blue'
 })
 box.addEventListener('mousedown', function(e){
-    console.log("yeet")
+    box.style.background = 'red'
 })
 box.addEventListener('mouseup', function(e){
-    console.log("yeetup")
+    box.style.background = 'yellow'
 })
 box.addEventListener('dblclick', function (e){
-    console.log("dblyeet")
+    box.style.background = 'green'
 })
 window.addEventListener('scroll', function(e){
-    this.console.log("scrollin'")
+    box.style.background = 'orange'
 })
 window.addEventListener('keypress', function(e){
     this.console.log("press")
