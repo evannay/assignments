@@ -1,0 +1,59 @@
+{
+    "appetizers": [
+        {
+            "name": "Poppers",
+            "ingredients": ["jalepenos", "cream cheese", "bacon"],
+            "description": "Deep fried jalepenos stuffed with cream cheese, wrapped in bacon."
+        },
+        {
+            "name": "Cheese Bites",
+            "ingredients": ["macaroni noodles", "cheese", "breading"],
+            "description": "Deep fried macaroni and cheese flavored, bite size, addictions"
+        },
+        {
+            "name": "Trolley Chips",
+            "ingredients": ["Garlic", "Potatoes", "Parmesan"],
+            "description":  "Deep fried waffle fries, with cajun dust or Parmesan"
+        }
+    ],
+    "cold sandwhiches": [
+        {
+            "name": "The Jeremy",
+            "ingredients": ["Ham", "Lettuce", "cream cheese",],
+            "description": "It isn't good, Jeremy sucks as a chef"
+        },
+        {
+            "name": "The big ol MIKE",
+            "ingredients": ["bread", "bacon", "pepperoni", "jalepenos", "Lettuce", "a whole meatlovers pizza"],
+            "description": "This is the sandwhich of sandwhiches"
+        },
+        {
+            "name": "Marcus' Mom's Mayonaise Monster",
+            "ingredients": ["bread", "Mayonaise"],
+            "description": "Bread with Mayo . . . nothing complicated here."
+        }
+    ],
+    "hot sanwhiches": [
+        {
+            "name": "Sam",
+            "ingredients":["chef's choice of meat", "the underbelly of a newborn calf", "pigsfeet", "bread"],
+            "description": "This sandwhich increases risk of diabetes by 500%"
+        },
+        {
+            "name": "Strauss' Stupid Salami Psuedo Sandwhich",
+            "ingredients": ["Salami", "mustard", "the tears of V-school students"],
+            "description": "This sandwhich is available on demand, usually around project due dates"
+        },
+        {
+            "name": "Tom",
+            "ingredients":["A dead mouse named Jerry", "bread"],
+            "description": ["This sandwhich is usually available right before a restaurant inspection"]
+        }
+    ],
+    "desserts": [
+        {
+            
+        }
+    ]
+
+}
