@@ -123,3 +123,59 @@
 // })
 
 // console.log(nameAndAge)
+
+const numArray = [2, 4, 6, 78]
+const doubleUp = numArray.map(num =>{
+  return num *2
+})
+// console.log(doubleUp)
+
+const stringify = numArray.map(num =>{
+  return num.toString()
+})
+// console.log(stringify)
+
+const names = ["john", "JACOB", "jinGleHeimer", "schmidt"]
+const capitalizeNames = names.map(item =>{
+  let lowCase = item.toLowerCase()
+  let lowSplit = lowCase.split('')
+  lowSplit[0] = lowSplit[0].toUpperCase()
+  let total = lowSplit.join('')
+  return total
+})
+// console.log(capitalizeNames)
+
+const peopleArray = [
+  {
+      name: "Angelina Jolie",
+      age: 80
+  },
+  {
+      name: "Eric Jones",
+      age: 2
+  },
+  {
+      name: "Paris Hilton",
+      age: 5
+  },
+  {
+      name: "Kayne West",
+      age: 16
+  },
+  {
+      name: "Bob Ziroll",
+      age: 100
+  }
+]
+const namesOnly = peopleArray.map(person =>{
+  if(person.age > 17){
+    return `${person.name} can see the movie!`
+  }else {
+    return `${person.name} can not see the movie!`
+  }
+})
+// console.log(namesOnly)
+const namesAndAge = peopleArray.map(person =>{
+  return `<h1>${person.name}<h1><h2>${person.age}<h2>`
+})
+console.log(namesAndAge)
