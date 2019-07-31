@@ -3,6 +3,7 @@
 //         let li = document.createElement('li')
 //         li.textContent = toDo.title;
 //         document.getElementById('list').appendChild(li)
+//         console.dir(response.data)
 
 //     })
 // })
@@ -122,8 +123,9 @@ document.addTodo.addEventListener('submit', function(e){
         title: document.addTodo.title.value,
         price: document.addTodo.price.value,
         description: document.addTodo.description.value,
-        image: document.addTodo.imgUrl.value
+        imgUrl: document.addTodo.imgUrl.value
     }
+    addTodo.title.value = ''
     posting(newTodo)
 })
 
@@ -189,3 +191,4 @@ function eraseToDo(toDo, li){
     axios.delete(`https://api.vschool.io/evan/todo/${toDo._id}`)
     document.getElementById('list').removeChild(li)
 }
+
