@@ -55,35 +55,48 @@
 .main-contain{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 245px auto;
     height: 100vh;
     width: 100vw;
 }
 
 .mainPointFont{
+    margin: 2em 0 0 0; 
     font-family: 'Julius Sans One', sans-serif;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
 }
 
 p{
+    width: 80%;
     font-family: 'LibreBaskerville-Regular';
     line-height: 2;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin: .75em auto;
 }
 
 .a{
-
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background: url('http://www.csszengarden.com/214/huntington.jpg') 100% 100% no-repeat;
+    
 }
 
 .b{
-    width: 80%;
     margin: 0 auto;
 }
 
 .c{
-    background-color: lightseagreen;
+    margin: 0 auto;
+    background-color: #bcd5c7;
 }
 
 .d{
-
+    margin: 0 auto;
 }
 
 .e{
@@ -91,17 +104,192 @@ p{
 }
 
 .f{
-    background-color: lightgrey;
+    background-color: #e5ece8;
+    padding: 0;
+    margin: 0;
 }
 
 .g{
-
+    background-color: #b3d1c0
 }
 
-@media(min-width: 1131px){
+.resources-view{
+    font-family: 'Julius Sans One', sans-serif;
+    border-top: 1px solid #a0b9ad;
+    width: 100%;
+    padding: 1em;
+}
+
+.resources-css{
+    font-family: 'Julius Sans One', sans-serif;
+    border-top: 1px solid #a0b9ad;
+    width: 100%;
+    padding: 1em;
+}
+
+.resources-faq{
+    font-family: 'Julius Sans One', sans-serif;
+    border-top: 1px solid #a0b9ad;
+    width: 100%;
+    padding: 1em;
+}
+
+.resources-submit{
+    font-family: 'Julius Sans One', sans-serif;
+    border-top: 1px solid #a0b9ad;
+    width: 100%;
+    padding: 1em;
+}
+
+.resources-trans{
+    font-family: 'Julius Sans One', sans-serif;
+    border-top: 1px solid #a0b9ad;
+    width: 100%;
+    padding: 1em;
+}
+
+.mid{
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid #a0b9ad;
+    font-style: italic;
+    color: #c0cac3
+}
+
+.garments{
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid #a0b9ad;
+    font-style: italic;
+    color: #c0cac3
+}
+
+.steel{
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid #a0b9ad;
+    font-style: italic;
+    color: #c0cac3
+}
+
+.apothecary{
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid #a0b9ad;
+    font-style: italic;
+    color: #c0cac3
+}
+
+.screen{
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid #a0b9ad;
+    font-style: italic;
+    color: #c0cac3
+}
+
+.fountain{
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid #a0b9ad;
+    font-style: italic;
+    color: #c0cac3
+}
+
+.robot{
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid #a0b9ad;
+    font-style: italic;
+    color: #c0cac3
+}
+
+.verde{
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid #a0b9ad;
+    font-style: italic;
+    color: #c0cac3
+}
+
+.design{
+    width: 100%;
+    font-family: 'Julius Sans One', sans-serif;
+    font-style: normal;
+}
+
+.name{
+    width: 100%;
+    font-family: 'LibreBaskerville-Regular';
+    font-style: normal;
+}
+
+@media(min-width: 321px){
+    .f{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .mid{
+
+    }
+    .garments{
+
+    }
+    .steel{
+
+    }
+    .apothecary{
+
+    }
+    .screen{
+
+    }
+    .fountain{
+
+    }
+    .robot{
+
+    }
+    .verde{
+
+    }
+    .g{
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .resources-view{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 100%;
+    }
+    .resources-css{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        width: 100%;
+    }
+    .resources-faq{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        width: 100%;
+    }
+    .resources-submit{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        width:100%
+    }
+    .resources-trans{
+        grid-column: 1/-1;
+        width: 100%;
+    }
+}
+
+
+@media(min-width: 1132px){
     .main-contain{
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 250px 1fr 1fr 1fr 1fr;
     
     }
     .b{
@@ -119,9 +307,106 @@ p{
     .f{
         grid-column:2/3;
         grid-row: 2/3;
+        display: unset;
     }
     .g{
         grid-column: 2/3;
         grid-row: 3/4;
+        display: unset;
+        padding: 0;
+        margin: 0;
+    }
+    .mid{
+        margin: 15% 24% 0% 13%;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        border-top: none;
+    }
+    .garments{
+        margin: 0% 24% 0% 13%;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .steel{
+        margin: 0% 24% 0% 13%;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .apothecary{
+        margin: 0% 24% 0% 13%;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .screen{
+        margin: 0% 24% 0% 13%;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .fountain{
+        margin: 0% 24% 0% 13%;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .robot{
+        margin: 0% 24% 0% 13%;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .verde{
+        margin: 0% 24% 0% 13%;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .resources-view{
+        margin: 13% 31% 0% 13%;
+        /* padding: 0% 0% 0% 0%; */
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+    }
+    .resources-css{
+        margin: 0% 31% 0% 13%;
+        /* padding: 0% 0% 0% 0%; */
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+    }
+    
+    .resources-faq{
+        margin: 0% 31% 0% 13%;
+        /* padding: 0% 0% 0% 0%; */
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+    }
+    .resources-submit{
+        margin: 0% 31% 0% 13%;
+        /* padding: 0% 0% 0% 0%; */
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+    }
+    .resources-trans{
+        margin: 0% 31% 0% 13%;
+        /* padding: 0% 0% 0% 0%; */
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+        border-bottom: 1px solid #a0b9ad;
     }
 }
