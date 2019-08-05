@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.app-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 35px 500px 100px;
+}
+.headline{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    font-size: 50pt;
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwvM7gJ7J4ci9xWZ-9etETiOmo16G51zAw9t3fb9XpEwziwY5xRQ);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: fixed;
+}
+.headline:hover{
+    color: white;
+}
+.body-container{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+}
+.small-heads{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+}
+.paragraph{
+    line-height: 1.8em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1em;
+}
+.navbar-contain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-button:hover{
+    font-size: 25pt;
+}
+.footer-contain{
+    text-align: center;
+    grid-row: 5/6;
+}
+.services-contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row: 4/5;
+}
+.service-title{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+@media(min-width: 410px){
+    .app-container{
+        grid-template-rows: 100px 35px 1fr 100px;
+    }
+    .headline{
+        height: 20vw;
+    }
+}
