@@ -1,0 +1,7 @@
+*{
+    margin: 0;
+}
+.test-box{
+    border: 5px solid black;
+    padding: 20px;
+}
