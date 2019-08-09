@@ -1,0 +1,33 @@
+/* *{
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.square{
+    height: 250px;
+    border: solid black 1px;
+} */
+
+*{
+    margin: 0;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: lightsalmon;
+}
+
+.square{
+    height: 250px;
+    border:solid black 1px;
+    border-radius: 25%;
+}
+
+.square:hover{
+    border:solid 1px fuchsia;
+}

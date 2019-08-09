@@ -1,18 +1,22 @@
 // import React from 'react'
 // import ReactDOM from 'react-dom'
-// import App from './App'
+// import Parent from './Parent'
+// import './styles.css'
+
 
 // ReactDOM.render(
-//     <App />,
+//     <Parent />,
 //     document.getElementById('root')
 // )
 
+
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App.js'
-import './App.css'
+import Parent from './Parent'
+import './styles.css'
+
 
 ReactDOM.render(
-    <App />,
+    <Parent />,
     document.getElementById('root')
 )

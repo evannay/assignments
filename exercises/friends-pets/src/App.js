@@ -1,14 +1,27 @@
+// import React from 'react'
+// import FriendsList from './FriendsList'
+
+// const App = () => {
+//     return (
+//         <div>
+//             <FriendsList />
+//         </div>
+//     )
+// }
+
+
+// export default App
+
 import React from 'react'
 import FriendsList from './FriendsList'
 
 const App = () => {
-    return (
+    return(
         <div>
             <FriendsList />
         </div>
+        
     )
 }
 
-
 export default App
-
