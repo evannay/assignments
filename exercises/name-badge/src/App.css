@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+}
+
+.app-container{
+    border: 1px solid black;
+    height: 350px;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25px 25px 25px 100px;
+    padding: 25px;
+    grid-gap: 15px;
+}
+.about-yourself{
+    height: 100px;
+    grid-column: 1/-1;
+}
+.button{
+    grid-column: 1/-1;
+    padding: 15px;
+    margin: auto;
+    border-radius: 15pt;
+}
+.button:hover{
+    border: 3px solid lightsalmon;
+}
+.badge-container{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: auto;
+    border: solid 1px black;
+    height: 150px;
+    width: 500px;
+    margin: 15px;
+    border-radius: 15pt;
+    padding: 5px 0px 5px 0px;
+}
+.full-name{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-container{
+    display:flex;
+    grid-column: 1/-1;
+    justify-content: space-around;
+    align-items: center;
+}
+.badge-container > p{
+    margin-left: 15px;
+}

@@ -44,8 +44,8 @@ class TravelForm extends React.Component{
     render(){
         const mappedPeople = this.state.people.map((person, i) =>{ 
             return (
-                <div>
-                    <h1 key={i}>{person}</h1>
+                <div key={i}>
+                    <h1>{person}</h1>
                 </div>
             )
         })
