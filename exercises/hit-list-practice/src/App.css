@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+
+.image-container{
+    height: 272px;
+    width: 222px;
+    background-position: center;
+    background-size: cover;
+}
+
+.map-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin: 50px 50px 50px 50px;
+}
+
+.hitList-container{
+    display: flex;
+    justify-content: center;
+}
+
+.header-container{
+    height: 150px;
+    font-size: 50pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}

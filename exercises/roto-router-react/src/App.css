@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+
+.header-container{
+    height: 100px;
+    background-color: black;
+    color: red;
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    background-color: black;
+    color: white;
+    list-style: none;
+}
+
+.navbar-container > a{
+    color:white;
+}
+.body-container{
+    height: 500px;
+    background-color: antiquewhite;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+}
+
+.about-container{
+    height: 500px;
+    background-color: blueviolet;
+}
+
+.contact-container{
+    height: 500px;
+    background-color: lightcoral;
+}
+
+.body-container{
+    height: 500px;
+    background-color: lightgreen;
+}

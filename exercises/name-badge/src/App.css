@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
 }
 
@@ -52,4 +52,39 @@
 }
 .badge-container > p{
     margin-left: 15px;
+} */
+
+*{
+    margin: 0;
+}
+
+.app-container{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25px 25px 25px 100px; */
+    border: 1px solid black;
+    height: 350px;
+    margin: 15px 50px 15px 50px;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25px 25px 25px 100px;
+    grid-gap: 15px;
+    margin: 25px 35px 15px 35px;
+}
+
+.about-self{
+    grid-column: 1/-1;
+    width: 75%;
+    margin: auto;
+    height: 100px;
+}
+
+.button{
+    margin: auto;
+    grid-column: 1/-1;
+    width: 100px;
+    border-radius: 25pt;
 }
