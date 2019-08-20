@@ -3,11 +3,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-    return(
+    return (
         <ul className='navbar-container'>
             <Link to='/'>Home</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/contact'>Contact</Link>
+            <Link to='/favorites'>Favorites</Link>
+            <Link to='/profile'>Profile</Link>
+            <input placeholder='Keyword Search'/>
         </ul>
     )
 }

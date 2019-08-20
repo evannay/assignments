@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Header = () => {
-    return (
+    return(
         <div className='header-container'>
-            This is my header
+            Tiffany's Signing!
         </div>
     )
 }

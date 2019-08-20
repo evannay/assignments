@@ -3,48 +3,24 @@
 }
 
 .header-container{
-    height: 100px;
-    background-color: black;
-    color: red;
     display: flex;
-    font-size: 50px;
     justify-content: center;
+    font-size: 50pt;
+    height: 150px;
+    background-color: lightblue;
     align-items: center;
 }
 
 .navbar-container{
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    background-color: black;
-    color: white;
     list-style: none;
-}
-
-.navbar-container > a{
-    color:white;
-}
-.body-container{
-    height: 500px;
-    background-color: antiquewhite;
-}
-
-.footer-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    background-color: lightgray;
+    height: 50px;
+    align-items: center;
 }
 
-.about-container{
-    height: 500px;
-    background-color: blueviolet;
-}
-
-.contact-container{
-    height: 500px;
-    background-color: lightcoral;
-}
-
-.body-container{
-    height: 500px;
-    background-color: lightgreen;
+.navbar-container > li:hover{
+    font-size: 20pt;
+    text-decoration: underline;
 }

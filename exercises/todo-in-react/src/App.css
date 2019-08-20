@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+
+.todos-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 350px;
+    grid-gap: 15px;
+    margin-top: 50px;
+}
+
+.todo-container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-container:hover{
+    border: 5px solid red;
+}
+
+.todo-container img{
+    width:45%;
+    height:30%;
+}
+
+.form-container{
+    display: grid;
+    width: 60%;
+    margin: auto;
+}

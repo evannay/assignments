@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    font-size: 50pt;
+    /* border: 1px solid black; */
+}
+
+.navbar-container{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.navbar-container > a{
+    text-decoration: none;
+    margin: 0 15px 0 15px;
+}
+
+.navbar-container > input{
+    height: 60%;
+    border-radius: 10px;
+}
+
+.home-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 500px;
+    text-align: center;
+}
+
+.generator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+}
+
+.generate-button{
+    height: 150px;
+    width: 400px;
+    font-size: 15pt;
+    border-radius: 15pt;
+    margin-bottom: 28px;
+}
+
+.generator-container > button:hover{
+    border: 3px solid black;
+}
+
+.save-button{
+    height: 36px;
+    width: 150px;
+    margin-top: 24px;
+    border-radius: 7pt;
+}
+
+.favorites-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 28px;
+    grid-gap: 15px;
+    align-items: center;
+    margin-left: 24px;
+}
+
+@media(max-width: 750px){
+    .generate-button{
+        width: 320px;
+        height: 128px;
+    }
+}
+
+@media(max-width: 352px){
+    .navbar-container{
+        height: 228px;
+        flex-direction: column;
+        padding: 0;
+        justify-content: space-around;
+    }
+    .navbar-container > a{
+        border-bottom: 1px solid black;
+        padding: 15px;
+    }
+    .navbar-container > input{
+        height: 25px;
+    }
+    .generate-button{
+        width: 288px;
+    }
+    .header-container{
+        font-size: 40pt;
+        margin-top: 68px;
+    }
+}
+
+@media(max-width: 321px){
+    .generate-button{
+        height: 128px;
+    }
+    .footer-container{
+
+    }
+}
+
+

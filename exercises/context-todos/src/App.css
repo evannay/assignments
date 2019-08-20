@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+
+.todos-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-top:55px;
+}
+
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.form-container{
+    display: grid;
+    width: 25%;
+    margin: auto;
+}
+
+.form-container > button{
+    width: 50%;
+    margin: auto;
+}
