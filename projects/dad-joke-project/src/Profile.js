@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Profile = () => {
+import { withProvider } from './ContextProvider.js'
+
+const Profile = (props) => {
     return(
-        <div>This is my profile page</div>
+        <div className='profile-container'>
+            <button className='dark-theme-button' onClick={props.themeChange}>Change Color Scheme</button>
+        </div>
     )
 }
 
-export default Profile
+export default withProvider(Profile)

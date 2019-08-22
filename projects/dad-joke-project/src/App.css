@@ -21,6 +21,7 @@
 .navbar-container > a{
     text-decoration: none;
     margin: 0 15px 0 15px;
+    color:black;
 }
 
 .navbar-container > input{
@@ -48,6 +49,8 @@
     flex-direction: column;
     align-items: center;
     font-size: 8px;
+    margin-top: 50px;
+    height: 28vh;
 }
 
 .generate-button{
@@ -75,7 +78,36 @@
     grid-auto-rows: 28px;
     grid-gap: 15px;
     align-items: center;
-    margin-left: 24px;
+    /* margin-left: 24px; */
+    margin-top: 28px;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+}
+
+.dark-theme-button{
+    width: 400px;
+    height: 150px;
+    border-radius: 16pt;
+    font-size: 18pt;
+}
+
+.joke-container{
+    height: 150px;
+    width: 700px;
+}
+
+.favorites-confirmation-false{
+    display:none;
+}
+
+.favorites-confirmation-true{
+    font-size: 10pt;
+    margin-top: 2px;
 }
 
 @media(max-width: 750px){
@@ -83,17 +115,24 @@
         width: 320px;
         height: 128px;
     }
+    .dark-theme-button{
+        width: 320px;
+        height: 128px;
+    }
+    .joke-container{
+        width: 375px;
+        font-size: 13pt;
+    }
 }
 
 @media(max-width: 352px){
     .navbar-container{
-        height: 228px;
-        flex-direction: column;
+        height: 51px;
+        /* flex-direction: column; */
         padding: 0;
         justify-content: space-around;
     }
     .navbar-container > a{
-        border-bottom: 1px solid black;
         padding: 15px;
     }
     .navbar-container > input{
@@ -102,9 +141,22 @@
     .generate-button{
         width: 288px;
     }
+    .dark-theme-button{
+        width: 288px;
+    }
     .header-container{
         font-size: 40pt;
-        margin-top: 68px;
+        margin-top: 8px;
+    }
+    .joke-container{
+        width: auto;
+        font-size: 10pt;
+    }
+    .footer-container{
+        margin-top: 0px;
+    }
+    .home-container{
+        grid-auto-rows: 343px;
     }
 }
 
@@ -112,8 +164,16 @@
     .generate-button{
         height: 128px;
     }
-    .footer-container{
-
+    .joke-container{
+        width:250px;
+        font-size: 7pt;
+    }
+    .navbar-container > a:hover{
+        border-bottom: 1px solid black;
+    }
+    .favorites-container{
+        grid-gap: 36px;
+        padding: 0px 21px;
     }
 }
 

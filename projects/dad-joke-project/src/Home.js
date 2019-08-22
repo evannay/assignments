@@ -3,12 +3,14 @@ import React from 'react'
 import axios from 'axios'
 
 import Joke from './Joke.js'
+import { withProvider } from './ContextProvider.js'
 
 class Home extends React.Component {
     constructor(){
         super()
         this.state = {
             jokes: [],
+            isSaved: false
         }
     }
 
@@ -20,14 +22,15 @@ class Home extends React.Component {
         axios.get('https://icanhazdadjoke.com/', configHeader).then(res => {
             console.log(res.data)
             this.setState({
-                jokes: [res.data]
+                jokes: [res.data],
+                isSaved: false
             })
         })
         
     }
 
     render(){
-        const mappedJokes = this.state.jokes.map(joke => {
+        const mappedJokes = this.props.jokes.map(joke => {
             return(
                 <Joke
                 key={joke.id}
@@ -38,14 +41,14 @@ class Home extends React.Component {
         return(
             <div className='home-container'>
                 <div className='generator-container'>
-                    <button className='generate-button' onClick={this.generateJoke}>Random Dad Joke</button>
-                    <>
+                    <button className='generate-button' onClick={this.props.generateJoke}>Generate</button>
+                    <div className='joke-container'>
                         { mappedJokes }
-                    </>
+                    </div>
                 </div>  
             </div>
         )
     }
 } 
 
-export default Home
+export default withProvider(Home)

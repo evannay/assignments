@@ -1,11 +1,23 @@
 import React from 'react'
+import { withProvider } from './ContextProvider';
 
-const Favorites = () => {
+import Favorite from './Favorite.js'
+
+const Favorites = (props) => {
+    console.log(props.savedJokes)
+    const mappedFavorites = props.savedJokes.map((savedJoke, i) => {
+        return (
+            <Favorite
+             joke={savedJoke}
+             key={i}
+            />
+        )
+    })
     return(
         <div className='favorites-container'>
-            Favorites
+            { mappedFavorites } 
         </div>
     )
 }
 
-export default Favorites
+export default withProvider(Favorites)
