@@ -4,7 +4,6 @@ import { withProvider } from './ContextProvider';
 import Favorite from './Favorite.js'
 
 const Favorites = (props) => {
-    console.log(props.savedJokes)
     const mappedFavorites = props.savedJokes.map((savedJoke, i) => {
         return (
             <Favorite

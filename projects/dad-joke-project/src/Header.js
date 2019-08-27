@@ -1,11 +1,12 @@
 import React from 'react'
+import { withProvider } from './ContextProvider';
 
-const Header = () => {
+const Header = (props) => {
     return (
-        <div className='header-container'> 
+        <div className={props.darkTheme ? 'header-container' : 'header-container-dark'}> 
             Dad Jokes
         </div>
     )
 }
 
-export default Header
+export default withProvider(Header)

@@ -21,7 +21,7 @@ function Enemy(name, hp, attack){
 const kimK = new Enemy('Kim Kardashian', 50, 15)
 const snorlax = new Enemy('Snorlax', 55, 14)
 const mrT = new Enemy('Mr. T', 60, 15)
-const bGuy = new Enemy("The black guy from Wii Sports", 65, 15)
+const bGuy = new Enemy("The bad guy", 65, 15)
 const spartacus = new Enemy("Spartacus", 90, 30)
 const jeremy = new Enemy("Jeremy", 45, 10)
 const wolverine = new Enemy("Wolverine", 50, 15)
@@ -34,7 +34,6 @@ let inventory = []
 let hasWon = false
 
 const options = ['dance around the arena', 'check inventory', 'check player status']
-const attackOptions = ['face re-decorator', 'curb-stomp', 'disemboweling cutlass']
 
 while(player1.hp > 0 && !hasWon){
     let action = readlineSync.keyInSelect(options, "What would you like to do, warrior?")

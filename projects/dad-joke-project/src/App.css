@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
     font-size: 50pt;
-    /* border: 1px solid black; */
 }
 
 .navbar-container{
@@ -15,7 +14,6 @@
     justify-content: flex-end;
     height: 50px;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 .navbar-container > a{
@@ -78,8 +76,8 @@
     grid-auto-rows: 28px;
     grid-gap: 15px;
     align-items: center;
-    /* margin-left: 24px; */
     margin-top: 28px;
+    height: 50vh;
 }
 
 .profile-container{
@@ -87,6 +85,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 56px;
+    height: 50vh;
 }
 
 .dark-theme-button{
@@ -108,6 +107,14 @@
 .favorites-confirmation-true{
     font-size: 10pt;
     margin-top: 2px;
+}
+
+.header-container-dark{
+    display: flex;
+    justify-content: center;
+    font-size: 50pt; 
+    background-color: black;
+    color: white;
 }
 
 @media(max-width: 750px){

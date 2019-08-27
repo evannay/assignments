@@ -33,6 +33,7 @@ class ContextProvider extends React.Component{
     
     themeChange = () => {
         this.setState(prevState => {
+            console.log(this.state.darkTheme)
             return {
                 darkTheme: !prevState.darkTheme
             }
