@@ -1,10 +1,7 @@
 import React from 'react'
-
 import axios from 'axios'
 
 const {Provider, Consumer} = React.createContext()
-
-
 
 class ContextProvider extends React.Component{
     constructor(){
@@ -13,7 +10,7 @@ class ContextProvider extends React.Component{
             savedJokes: JSON.parse(localStorage.getItem('savedFavorites')) || [],
             isSaved: false,
             darkTheme: false,
-            jokes: []
+            joke: ''
         }
     }
 
@@ -41,14 +38,14 @@ class ContextProvider extends React.Component{
     }
 
 
-    generateJoke = (event) => {
-        event.preventDefault()
+    generateJoke = () => {
         const configHeader = {
             headers : { Accept: 'application/json' }
         }
         axios.get('https://icanhazdadjoke.com/', configHeader).then(res => {
+            console.log(res.data)
             this.setState({
-                jokes: [res.data],
+                joke: res.data.joke,
                 isSaved: false
             })
         })

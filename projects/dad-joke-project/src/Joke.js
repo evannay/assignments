@@ -3,7 +3,6 @@ import React from 'react'
 import { withProvider } from './ContextProvider.js'
 
 const Joke = (props) => {
-    console.log(props)
     return(
         <>
             <h1>

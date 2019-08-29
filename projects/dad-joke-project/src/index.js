@@ -1,16 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+// Third-party packages
 import { BrowserRouter } from 'react-router-dom'
-import ContextProvider from './ContextProvider'
 
+// My Components
+import ContextProvider from './ContextProvider'
 import App from './App.js'
+
 
 ReactDOM.render(
     <ContextProvider>
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </ContextProvider>,
     document.getElementById('root')
 )
