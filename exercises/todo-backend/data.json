@@ -1,0 +1,16 @@
+[
+    {
+        "name": "The name",
+        "description": "The description of the todo",
+        "imageUrl": "http://www.myimage....",
+        "completed": false,
+        "_id": "2344lh23h2"
+    },
+    {
+        "name": "The name",
+        "description": "The description of the todo",
+        "imageUrl": "http://www.myimage....",
+        "completed": false,
+        "_id": "23334lh28h2"
+    }
+  ]

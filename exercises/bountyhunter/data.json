@@ -1,0 +1,24 @@
+[
+    {
+      "firstName": "Jeremy",
+      "lastName": "Bleak",
+      "living": true,
+      "_id": "adsfasdf787sdf87s",
+      "bountyAmount": 3438,
+      "type": "Sith"
+    },{
+        "firstName": "Marcus",
+        "lastName": "Peterson",
+        "living": true,
+        "_id": "adefadfavdddd87s",
+        "bountyAmount": 3221,
+        "type": "Sith"
+    },{
+        "firstName": "Jessie",
+        "lastName": "James",
+        "living": true,
+        "_id": "adefwoeiruwer87s",
+        "bountyAmount": 9921,
+        "type": "Jedi"
+    }
+]
