@@ -1,16 +1,10 @@
 const express = require('express')
 const app = express()
-const PORT = 1248
-
-
+const PORT = 5454
 
 app.use('/', express.json())
-app.use('/bounties', require('./bountyRoutes.js'))
-
-
+app.use('/things', require('./thingRoutes'))
 
 app.listen(PORT, () => {
     console.log(`App is listening on port ${PORT}`)
 })
-
-
