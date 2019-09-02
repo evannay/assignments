@@ -82,8 +82,26 @@ p{
 .a{
     grid-column: 1/-1;
     grid-row: 1/2;
-    background: url('http://www.csszengarden.com/214/huntington.jpg') 100% 100% no-repeat;
-    
+    background: url('http://www.csszengarden.com/214/huntington.jpg') 100% no-repeat;
+    color: white;
+}
+
+.a > h1 {
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    margin: 50px 0px 5px 0px;
+}
+
+.a > h4 {
+    color: lightgray;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.hidden{ 
+    display: none;
 }
 
 .b{
@@ -224,6 +242,11 @@ p{
     font-style: normal;
 }
 
+.dotted-underline {
+    border-bottom: dotted;
+    color: gray;
+}
+
 @media(min-width: 321px){
     .f{
         display:grid;
@@ -282,6 +305,12 @@ p{
     .resources-trans{
         grid-column: 1/-1;
         width: 100%;
+    }
+}
+
+@media(min-width: 600px){
+    .hidden {
+        display: unset;
     }
 }
 
