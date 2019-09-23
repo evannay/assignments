@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { withAuth } from './AuthContext'
 
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className='header-container'>
             <div className='header-title'>
@@ -11,9 +12,10 @@ const Header = () => {
             <div className='header-options'>
                 <Link to ='/login'>Login</Link>
                 <Link to ='/signup'>Sign Up</Link>
+                <button onClick={props.logout}>Logout</button>
             </div>
          </div>
     )
 }
 
-export default Header
+export default withAuth(Header)

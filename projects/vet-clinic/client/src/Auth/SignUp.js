@@ -20,6 +20,7 @@ class SignUp extends React.Component {
     handleSubmit =(e) => {
         e.preventDefault()
         this.props.signup(this.state)
+            .then(() => this.props.history.push('/appointments'))
     }
 
     render(props){

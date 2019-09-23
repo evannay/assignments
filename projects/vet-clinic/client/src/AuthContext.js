@@ -1,5 +1,12 @@
 import React from 'react'
 import axios from 'axios'
+const appointmentAxios = axios.create()
+
+appointmentAxios.interceptors.request.use((config => {
+    const token = localStorage.getItem("token")
+    config.headers.Authorization = `Bearer ${token}`
+    return config
+}))
 
 const {Provider, Consumer} = React.createContext()
 
@@ -15,7 +22,7 @@ class AuthContext extends React.Component {
 
 
     signup = (userInfo) => {
-        return axios.post('/auth/signup', userInfo)
+        return appointmentAxios.post('/auth/signup', userInfo)
             .then(response => {
                 const { user, token } = response.data
                 localStorage.setItem("token", token)
@@ -29,7 +36,7 @@ class AuthContext extends React.Component {
     }
 
     login = (credentials) => {
-        return axios.post("/auth/login", credentials)
+        return appointmentAxios.post("/auth/login", credentials)
         .then(response => {
             const { token, user } = response.data
             localStorage.setItem("token", token)
@@ -43,12 +50,24 @@ class AuthContext extends React.Component {
     }
 
     getAppointments = () => {
-        axios.get("/api/appointments")
+        appointmentAxios.get("/api/appointments")
             .then(response => {
-                console.log(response.data)
+                this.setState({
+                    appointments: response.data
+                })
+                return response
             })
     }
 
+    logout = () => {
+        localStorage.removeItem("user")
+        localStorage.removeItem("token")
+        this.setState({
+            todos: [],
+            user: {},
+            token: ''
+        })
+    }
 
 
     render() {
@@ -57,6 +76,7 @@ class AuthContext extends React.Component {
                 signup: this.signup,
                 login: this.login,
                 getAppointments: this.getAppointments,
+                logout: this.logout,
                 ...this.state
             }}>
                 {this.props.children}
