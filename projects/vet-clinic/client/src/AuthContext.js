@@ -45,6 +45,7 @@ class AuthContext extends React.Component {
                 user,
                 token
             })
+            this.getAppointments()
             return response
         })
     }
@@ -69,6 +70,16 @@ class AuthContext extends React.Component {
         })
     }
 
+    addApointment = (newAppointment) => {
+        return appointmentAxios.post('/api/appointments', newAppointment)
+            .then(response => {
+                this.setState(prevState => {
+                    return { appointments: [...prevState.appointments, response.data] }
+                })
+                return response
+            })
+    }
+
 
     render() {
         return(
@@ -77,6 +88,7 @@ class AuthContext extends React.Component {
                 login: this.login,
                 getAppointments: this.getAppointments,
                 logout: this.logout,
+                addAppointment: this.addApointment,
                 ...this.state
             }}>
                 {this.props.children}

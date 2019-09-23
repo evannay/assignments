@@ -7,7 +7,8 @@ class SignUp extends React.Component {
         super()
         this.state = {
             username: '',
-            password: ''
+            password: '',
+            errorMessage: ''
         }
     }
     handleChange = (e) => {
@@ -16,12 +17,26 @@ class SignUp extends React.Component {
             [name]:value
         })
     }
+    
+    clearInputs = () => {
+        this.setState({
+            username: '',
+            password: '',
+            errorMessage: ''
+        })
+    }
 
     handleSubmit =(e) => {
         e.preventDefault()
         this.props.signup(this.state)
             .then(() => this.props.history.push('/appointments'))
+            .catch(err => {
+                this.setState({
+                    errorMessage: err.response.data.message
+                })
+            })
     }
+
 
     render(props){
         return (
@@ -33,6 +48,11 @@ class SignUp extends React.Component {
                             <button>Create Account</button>
                         </div>
                     </form>
+
+                    {   
+                        this.state.errorMessage &&
+                        <p style={{color: "red"}}>{this.state.errorMessage}</p>
+                    }
                 </div>
         )
     }

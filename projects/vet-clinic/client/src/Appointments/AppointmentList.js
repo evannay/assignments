@@ -1,5 +1,6 @@
 import React from 'react'
 import Appointment from './Appointment'
+import AppointmentForm from './AppointmentForm'
 import { withAuth } from '../AuthContext';
 
 class AppointmentList extends React.Component {
@@ -21,6 +22,7 @@ class AppointmentList extends React.Component {
 
         return(
             <div>
+                <AppointmentForm />
                 {mappedAppointments}
             </div>
         )

@@ -7,7 +7,8 @@ class Login extends React.Component {
         super()
         this.state = {
             username: '',
-            password: ''
+            password: '',
+            errorMessage: ''
         }
     }
 
@@ -23,6 +24,11 @@ class Login extends React.Component {
         e.preventDefault()
         this.props.login(this.state)
             .then(() => this.props.history.push('/appointments'))
+            .catch(err => {
+                this.setState({
+                    errorMessage: err.response.data.message
+                })
+            })
     }
 
 
@@ -38,6 +44,12 @@ class Login extends React.Component {
                             <button>Login</button>
                     </div>
                 </form>
+
+                {
+                    this.state.errorMessage && 
+                    <p style={{color: "red"}}>{this.state.errorMessage}</p>
+                }
+
             </div>
         )
     }
