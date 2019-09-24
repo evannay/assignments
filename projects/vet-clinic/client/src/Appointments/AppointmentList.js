@@ -16,6 +16,7 @@ class AppointmentList extends React.Component {
                 <Appointment
                 key = {appointment._id} 
                 appointment = {appointment}
+                deleteAppointment = {this.props.deleteAppointment}
                 />
             )
         })

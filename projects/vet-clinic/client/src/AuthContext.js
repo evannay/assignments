@@ -64,7 +64,7 @@ class AuthContext extends React.Component {
         localStorage.removeItem("user")
         localStorage.removeItem("token")
         this.setState({
-            todos: [],
+            appointments: [],
             user: {},
             token: ''
         })
@@ -80,6 +80,19 @@ class AuthContext extends React.Component {
             })
     }
 
+    deleteAppointment = (appointmentId) => {
+        appointmentAxios.delete(`/api/appointments/${appointmentId}`)
+            .then(response => {
+                this.setState(prevState => {
+                    const updatedAppointments = prevState.appointments.filter(appointment => {
+                        return appointment._id !== appointmentId
+                    })
+                    return { appointments: updatedAppointments }
+                })
+                return response
+            })
+    }
+
 
     render() {
         return(
@@ -89,6 +102,7 @@ class AuthContext extends React.Component {
                 getAppointments: this.getAppointments,
                 logout: this.logout,
                 addAppointment: this.addApointment,
+                deleteAppointment: this.deleteAppointment,
                 ...this.state
             }}>
                 {this.props.children}

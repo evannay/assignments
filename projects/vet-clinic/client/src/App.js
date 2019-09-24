@@ -5,6 +5,7 @@ import Header from './Header'
 import Login from './Auth/Login'
 import SignUp from './Auth/SignUp'
 import AppointmentList from './Appointments/AppointmentList'
+import ProtectedRoute from './Auth/ProtectedRoute'
 
 
 
@@ -15,7 +16,7 @@ const App = () => {
             <Switch>
                 <Route path='/login' component={Login}/>
                 <Route path='/signup' component={SignUp}/>
-                <Route path='/appointments' component={AppointmentList}/>
+                <ProtectedRoute path='/appointments' component={AppointmentList}/>
             </Switch>
         </div>
     )

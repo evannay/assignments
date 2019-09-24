@@ -7,6 +7,7 @@ const Appointment = (props) => {
             <h5>{props.appointment.description}</h5>
             <h5>{props.appointment.date}</h5>
             <h5>{props.appointment.time}</h5>
+            <button onClick={() => props.deleteAppointment(props.appointment._id)}>Delete</button>
         </div>
     )
 }
