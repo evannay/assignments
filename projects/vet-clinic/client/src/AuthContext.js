@@ -16,7 +16,8 @@ class AuthContext extends React.Component {
         this.state = {
             appointments: [],
             user: JSON.parse(localStorage.getItem("user")) || {},
-            token: localStorage.getItem("token") || ''
+            token: localStorage.getItem("token") || '',
+            isEditing: false
         }
     }
 
@@ -93,6 +94,21 @@ class AuthContext extends React.Component {
             })
     }
 
+    editAppointment = (appointmentId, appointment) => {
+        return appointmentAxios.put(`api/appointments/${appointmentId}`, appointment)
+            .then(response => {
+                this.setState(prevState => {
+                    const updatedAppointments = prevState.appointments.map(appointment => {
+                        return appointment._id === response.data._id ? response.data : appointment
+                    })
+                    return { 
+                        appointments: updatedAppointments
+                    }
+                })
+                return response
+            })
+    }
+
 
     render() {
         return(
@@ -103,6 +119,7 @@ class AuthContext extends React.Component {
                 logout: this.logout,
                 addAppointment: this.addApointment,
                 deleteAppointment: this.deleteAppointment,
+                editAppointment: this.editAppointment,
                 ...this.state
             }}>
                 {this.props.children}

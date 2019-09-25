@@ -17,6 +17,7 @@ class AppointmentList extends React.Component {
                 key = {appointment._id} 
                 appointment = {appointment}
                 deleteAppointment = {this.props.deleteAppointment}
+                editAppointment = {this.props.editAppointment}
                 />
             )
         })
@@ -24,7 +25,9 @@ class AppointmentList extends React.Component {
         return(
             <div>
                 <AppointmentForm />
-                {mappedAppointments}
+                <div className='appointments-container'>
+                    {mappedAppointments}
+                </div>
             </div>
         )
     }

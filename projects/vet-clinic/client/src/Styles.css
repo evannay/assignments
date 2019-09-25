@@ -3,7 +3,7 @@
 }
 
 .header-container {
-    height: 100vh;
+    height: 25vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -49,4 +49,28 @@
 .signup-inputs > button {
     border: 1px solid black;
     margin: auto;
+}
+
+.add-appointment-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.appointments-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    grid-gap: 50px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.appointment-container {
+    border: solid 1px black;
+    width: 225px;
+    margin: auto;
+    border-radius: 5pt;
 }

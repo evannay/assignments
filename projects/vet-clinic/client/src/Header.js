@@ -7,7 +7,7 @@ const Header = (props) => {
     return (
         <div className='header-container'>
             <div className='header-title'>
-                <p>Umpqua Small Animal Clinic</p>
+                <p>Your Appointments</p>
             </div>
             <div className='header-options'>
                 <Link to ='/login'>Login</Link>
