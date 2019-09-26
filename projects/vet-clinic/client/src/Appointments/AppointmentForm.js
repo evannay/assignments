@@ -40,13 +40,13 @@ class AppointmentForm extends React.Component {
 
     render(){
         return (
-            <div>
+            <div className='add-appointment-form-container'>
                 <form onSubmit={this.handleSubmit} className='add-appointment-form'>
                     <input type="text" placeholder='Title' value={this.state.name} name ='name' onChange={this.handleChange}/>
                     <input type="text" placeholder='Description' value={this.state.description} name ='description' onChange={this.handleChange}/>
                     <input type="text" placeholder='Date (DD/MM/YYYY)' value={this.state.date} name ='date' onChange={this.handleChange}/>
                     <input type="text" placeholder='Time' value={this.state.time} name ='time' onChange={this.handleChange}/>
-                    <button>+</button>
+                    <button className='add-button'>+</button>
                 </form>
             </div>
         )

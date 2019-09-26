@@ -32,17 +32,17 @@ const Appointment = (props) => {
                 <h5>{props.appointment.description}</h5>
                 <h5>{props.appointment.date}</h5>
                 <h5>{props.appointment.time}</h5>
-                <button onClick={() => props.deleteAppointment(props.appointment._id)}>Delete</button>
-                <button onClick={() => setIsEditing(true)}>Edit</button>
+                <button className='delete-button' onClick={() => props.deleteAppointment(props.appointment._id)}>Delete</button>
+                <button className='edit-button' onClick={() => setIsEditing(true)}>Edit</button>
             </React.Fragment>
             :
             <React.Fragment>
-                <form>
+                <form className='edit-form'>
                     <input type="text" placeholder='Name' name='name' value={inputs.name} onChange={handleChange} />
                     <input type="text" placeholder='Description' name='description' value={inputs.description} onChange={handleChange} />
                     <input type="text" placeholder='Date' name='date' value={inputs.date} onChange={handleChange} />
                     <input type="text" placeholder='Time' name='time' value={inputs.time} onChange={handleChange} />
-                    <button onClick={() => {
+                    <button className='update-button' onClick={() => {
                         props.editAppointment(props.appointment._id, inputs)
                         setIsEditing(false)
                         }}>Update</button>

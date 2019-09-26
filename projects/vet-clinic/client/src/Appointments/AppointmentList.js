@@ -23,7 +23,7 @@ class AppointmentList extends React.Component {
         })
 
         return(
-            <div>
+            <div className='not-sure'>
                 <AppointmentForm />
                 <div className='appointments-container'>
                     {mappedAppointments}

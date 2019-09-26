@@ -1,7 +1,227 @@
 * {
-    margin: 0
+    margin: 0;
 }
 
+.app-container {
+    min-height: 100vh;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; 
+    font-size: 18pt;
+    font-family: 'Indie Flower', cursive;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-sure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.add-appointment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appointments-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 50px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.appointment-container {
+    text-align: center;
+}
+
+.add-appointment-form-container {
+    margin: 25px 0px 25px 0px;
+}
+
+@media(min-width: 767px){
+    .appointments-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .hero-container {
+        font-size: 34pt;
+    }
+
+    .add-appointment-form-container {
+        height: 150px;
+    }
+}
+
+
+
+
+
+
+/* .app-container {
+    background-color: lightcyan;
+}
+
+.header-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 44px auto 0px auto;
+    flex-direction: column;
+    align-items: center;
+    height: 125px;
+}
+
+.header-options > a {
+    text-decoration: none;
+    color: black;
+}
+
+.logout-button {
+    color: gray;
+    background-color: lightgray;
+    width: 50px;
+}
+
+.not-sure {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.add-appointment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.add-appointment-form > input {
+    margin: 5px 0px 5px 0px;
+    
+}
+
+.add-button {
+    color: green;
+    background-color: lightgreen;
+    width: 50px;
+}
+
+.appointment-container {
+    display: grid;
+    grid-gap: 5px;
+    padding-bottom: 40px;
+}
+
+.delete-button {
+    color: red;
+    background-color: #f77575;
+    width: 50px;
+    margin: auto;
+}
+
+.edit-button {
+    color: red;
+    background-color: black;
+    width: 50px;
+    margin: auto;
+}
+
+.login-form-container {
+    margin-top: 142px;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    height: 200px;
+    justify-content: space-evenly;
+}
+
+.login-form-container > p {
+    text-align: center;
+}
+
+.hero-container {
+    font-size: 24pt;
+    text-align: center;
+    margin: 0px auto 25px auto;
+    padding-top: 25px;
+}
+
+.signup-inputs {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    height: 200px;
+    justify-content: space-evenly;
+}
+
+.signup-form-container {
+    margin-top: 142px;
+}
+
+.signup-form-container > p {
+    text-align: center;
+}
+
+.edit-form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.update-button {
+    color: green;
+    background-color: lightgreen;
+    width: 50px;
+    margin: auto;
+}
+
+.not-sure {
+    height: 310px;
+}
+
+.appointments-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+  */
+
+
+
+
+
+
+
+/* 
 .header-container {
     height: 25vh;
     display: grid;
@@ -36,6 +256,13 @@
 
 }
 
+.login-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
 .signup-inputs {
     display: flex;
     flex-direction: column;
@@ -59,13 +286,10 @@
 }
 
 .appointments-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    text-align: center;
-    grid-gap: 50px;
-    margin-top: 25px;
-    align-items: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .appointment-container {
@@ -73,4 +297,5 @@
     width: 225px;
     margin: auto;
     border-radius: 5pt;
-}
+    text-align: center;
+} */
