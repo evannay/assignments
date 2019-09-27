@@ -55,10 +55,38 @@
 
 .appointment-container {
     text-align: center;
+    font-size: 17pt;
 }
 
 .add-appointment-form-container {
     margin: 25px 0px 25px 0px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-options > a {
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    text-decoration: none;
+}
+
+.header-options > a:hover {
+    text-decoration: underline;
+}
+
+.appointment-container > button {
+    font-family: 'Indie Flower', cursive;
+}
+
+.edit-form > button {
+    font-family: 'Indie Flower', cursive;
+}
+
+.login-form > button {
+    font-family: 'Indie Flower', cursive;
 }
 
 @media(min-width: 767px){
