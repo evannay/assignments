@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+
+.app-container {
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.save-button {
+    display: unset;
+}
