@@ -13,8 +13,6 @@ const RandomDate = () => {
         
     })
 
-    
-
     const handleChange = (e) => {
         const { name, value } = e.target
         setInputs({
@@ -37,21 +35,20 @@ const RandomDate = () => {
         })
     }
 
-    const saveFact = (fave) => {
-        setFavorites(prev => ({
-            favorites: [...prev.favorites, fact.dateFact]
-        }))
-        console.log(favorites.favorites)
+    const saveFact = () => {
+        let faves = [...favorites, fact.dateFact]
+        setFavorites(
+            faves
+        )
+        localStorage.setItem('favorites', JSON.stringify(faves))
     }
-    
-
 
     return (
         <div className='random-date-container'>
             <input type="text" onChange={handleChange} placeholder='Enter Date M/D' name='date' value={input.date}/>
             <button onClick={generateDateFact}>Generate Date Fact</button>
             <button onClick={clearInputs}>Clear</button>
-            <div>
+            <div className='fact-container'>
                 {fact.dateFact}
             </div>
             <div className={fact.isPresent ? 'save-button' : 'hidden'}>

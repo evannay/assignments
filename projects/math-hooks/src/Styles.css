@@ -8,8 +8,119 @@
 
 .hidden {
     display: none;
+    height: 50px;
 }
 
 .save-button {
     display: unset;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.save-button > button {
+    height: 50px;
+    width: 165px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    font-size: 22pt;
+    margin: 30px;
+}
+
+.navbar-container {
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    z-index: 2;
+    background-color: white;
+    align-items: center;
+}
+
+.navbar-container > a {
+    text-decoration: none;
+    color: black;
+}
+
+.favorite-container {
+    margin-bottom: 30px;
+}
+
+.random-math-container {
+    text-align: center;
+}
+
+.random-math-container > button {
+    height: 50px;
+    border: 1px solid black;
+}
+
+.fact-container {
+    height: 75px;
+    margin: 15px 0px 15px 0px;
+    padding: 12px;
+}
+
+.random-date-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.random-date-container > input {
+    text-align: center;
+    height: 50px;
+    margin: auto;
+}
+
+.random-date-container > button{
+    height: 50px;
+    border: 1px solid black;
+    margin: auto;
+    width: 165px;
+    margin-bottom: 15px;
+}
+
+.random-year-container {
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.random-year-container > input {
+    text-align: center;
+    height: 50px;
+    margin: auto;
+}
+
+.random-year-container > button {
+    height: 50px;
+    border: 1px solid black;
+    margin: auto;
+    width: 165px;
+    margin-bottom: 15px;
+}
+
+.favorite-container {
+    padding: 12px;
+    text-align: center;
+}
+
+.favorite-container > button {
+    height: 50px;
+    width: 165px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    text-align: center;
 }

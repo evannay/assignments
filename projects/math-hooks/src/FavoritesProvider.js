@@ -3,9 +3,9 @@ import React, { useContext, useState, useMemo } from 'react'
 const FavoritesContext = React.createContext()
 
 const FavoritesProvider = props => {
-    const  [favorites, setFavorites] = useState ({
-        favorites: []
-    })
+    const  [favorites, setFavorites] = useState (
+        JSON.parse(localStorage.getItem('favorites')) || []
+    )
     const value = useMemo(() => [favorites, setFavorites], [favorites])
     return (
         <FavoritesContext.Provider value={value} {...props} />

@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useFavorites } from './FavoritesProvider'
 import axios from 'axios'
 
 const RandomYear = () => {
+    const [ favorites, setFavorites ] = useFavorites()
     const [ input, setInputs ] = useState ({
         date: ''
     })
@@ -33,17 +35,25 @@ const RandomYear = () => {
         })
     } 
 
+    const saveFact = () => {
+        let faves = [...favorites, fact.yearFact]
+        setFavorites(
+            faves
+        )
+        localStorage.setItem('favorites', JSON.stringify(faves))
+    }
+
 
     return (
         <div className='random-year-container'>
             <input type="text" placeholder='YYYY' name='date' value={input.date} onChange={handleChange}/>
             <button onClick={generateYearFact}>Generate Year Fact</button>
             <button onClick={clearInputs}>Clear</button>
-            <div>
+            <div className='fact-container'>
                 {fact.yearFact}
             </div>
             <div className={fact.isPresent ? 'save-button' : 'hidden'}>
-                <button>Save</button>
+                <button onClick={saveFact}>Save</button>
             </div>
         </div>
     )

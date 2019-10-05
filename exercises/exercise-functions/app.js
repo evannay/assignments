@@ -50,3 +50,36 @@
 // }
 
 // console.log(fib(8))
+
+
+// function addingNumbers(num1, num2){
+//     return num1 + num2
+// }
+
+// function largestOfThree(n1, n2, n3){
+//     if(n1 > n2 && n1 > n3){
+//         return n1
+//     }else if(n2 > n1 && n2 > n3){
+//         return n2
+//     }else{
+//         return n3
+//     }
+// }
+
+// function oddOrEven(num){
+//     if(num % 2 === 0){
+//         return "Even"
+//     }else {
+//         return "Odd"
+//     }
+// }
+
+// function stringPlay(string){
+//     if(string.length <= 20){
+//         return string + string
+//     }else{
+//         let halfString = string.length / 2
+//         let newString = string.slice(0, halfString)
+//         return newString
+//     }
+// }
