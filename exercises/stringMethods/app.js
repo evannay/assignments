@@ -119,36 +119,57 @@
 // }
 // console.log(capitalizeAndLowerCase("Jupiter and my toggles booty"))
 
-function stringToLowerCase(string){
-    return string.toLowerCase()
+// function stringToLowerCase(string){
+//     return string.toLowerCase()
+// }
+
+// function stringToUpperCase(string){
+//     return string.toUpperCase()
+// }
+
+// function stringHalfAndHalf(string){
+//     let low = string.toLowerCase()
+//     let high = string.toUpperCase()
+//     let newString = low + high
+//     return newString
+// }
+
+// function firstHalfSecondHalf(string){
+//     let halfLength = string.length / 2
+//     let upperhalf = string.slice(0, halfLength).toUpperCase()
+//     let lowerhalf = string.slice(halfLength, string.length).toLowerCase()
+//     return upperhalf + lowerhalf
+// }
+
+// function firstLetterCaps(str){
+//     let array = str.split(' ')
+//     let newArray = array.map(word => {
+//         return word.charAt(0).toUpperCase() + word.slice(1)
+//     })
+//     let final = newArray.join(' ')
+//     return final
+// }
+
+
+// console.log(firstLetterCaps('this is a test'))
+
+// function myTestCaps(str){
+//     let array = str.split(' ')
+//     let newArray = []
+//     for(let i = 0; i < array.length; i++){
+//         newArray.push(array[i].charAt(0).toUpperCase() + array[i].slice(1))
+//         return newArray
+//     }
+// }
+
+// console.log(myTestCaps('this is a test'))
+
+function findIndex(array, num){
+    for(let i = 0; i < array.length; i++){
+        if (array[i] === num){
+            return i
+        }
+    }
 }
 
-function stringToUpperCase(string){
-    return string.toUpperCase()
-}
-
-function stringHalfAndHalf(string){
-    let low = string.toLowerCase()
-    let high = string.toUpperCase()
-    let newString = low + high
-    return newString
-}
-
-function firstHalfSecondHalf(string){
-    let halfLength = string.length / 2
-    let upperhalf = string.slice(0, halfLength).toUpperCase()
-    let lowerhalf = string.slice(halfLength, string.length).toLowerCase()
-    return upperhalf + lowerhalf
-}
-
-function firstLetterCaps(str){
-    let array = str.split(' ')
-    let newArray = array.map(word => {
-        return word.charAt(0).toUpperCase() + word.slice(1)
-    })
-    let final = newArray.join(' ')
-    return final
-}
-
-
-console.log(firstLetterCaps('this is a test'))
+console.log(findIndex[1,2,3,4,5], 1)
