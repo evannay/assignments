@@ -1,11 +1,11 @@
-// var fruit = ["banana", "apple", "orange", "watermelon"];
-// var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
-// vegetables.pop()
-// fruit.shift()
-// let indexOrange = fruit.indexOf('orange')
-// fruit.push(1)
-// let vLength = vegetables.length
-// vegetables.push(3)
+var fruit = ["banana", "apple", "orange", "watermelon"];
+var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
+vegetables.pop()
+fruit.shift()
+let indexOrange = fruit.indexOf('orange')
+fruit.push(1)
+let vLength = vegetables.length
+vegetables.push(3)
 // // let strFruit = fruit.join(' ')
 // // let strVeg = vegetables.join(' ')
 // // let total = strFruit.concat(strVeg)
@@ -32,4 +32,14 @@
 
 // console.log(myFood)
 
+var fruit = ["banana", "apple", "orange", "watermelon"];
+var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
+vegetables.pop()
+fruit.shift()
+let indexOrange = fruit.indexOf("orange")
+fruit.push(1)
+let vLength = vegetables.length
+vegetables.push(3)
 
+
+console.log(fruit)
