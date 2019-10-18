@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+.app-container {
+    min-height: 100vh;
+}
+
+.header-container {
+    text-align: center;
+}
+
+.calculator-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 50px;
+}
+
+
+.border {
+    border: solid 1px black;
+}
+
+.card{
+    height: 350px;
+    width: 315px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 767px) {
+    .calculator-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
