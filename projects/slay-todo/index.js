@@ -8,7 +8,7 @@ app.use('/todos', require('./routes/todoRoutes'))
 
 mongoose.connect('mongodb://localhost:27017/epic-todos', {
     useNewUrlParser: true,
-    useFindAndModify: true,
+    useFindAndModify: false,
     useCreateIndex: false, 
     useUnifiedTopology: true
 })

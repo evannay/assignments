@@ -15,6 +15,9 @@ const todoSchema = new Schema ({
     completed: {
         type: Boolean,
         default: false
+    },
+    xpValue: {
+        type: Number
     }
 })
 
